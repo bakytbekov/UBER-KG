@@ -673,6 +673,9 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="cardView" destination="B9H-Fq-7PA" id="MKH-pn-CPI"/>
+                                            <outlet property="dateLbl" destination="08E-7l-Nbc" id="OoN-Lw-IKl"/>
+                                            <outlet property="nameLbl" destination="qTN-Bo-rnV" id="0XV-UE-glx"/>
+                                            <outlet property="statusLbl" destination="zq2-xm-Mcn" id="ByJ-fw-w2b"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -724,6 +727,7 @@
                     <connections>
                         <outlet property="generalMapView" destination="8BR-ig-lDM" id="ga4-Uj-n4e"/>
                         <outlet property="infoView" destination="mXv-KG-dqh" id="0YD-MU-F5i"/>
+                        <outlet property="nameLbl" destination="yHE-mY-heQ" id="4HX-57-wXT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HI3-o3-4PB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -738,8 +742,8 @@
                                 <constraint firstAttribute="height" constant="100" id="jZG-PG-HPn"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нуриля Хамлова" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHE-mY-heQ">
-                            <rect key="frame" x="132" y="20.5" width="134" height="21"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нуриля Абаева" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHE-mY-heQ">
+                            <rect key="frame" x="132" y="20.5" width="121.5" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>

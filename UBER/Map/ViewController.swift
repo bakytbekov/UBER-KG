@@ -59,7 +59,7 @@ class ViewController: UIViewController, GMSMapViewDelegate {
     }
  
     func setupGoogleMap() {
-        let camera = GMSCameraPosition.camera(withLatitude: 42.8706253, longitude: 74.5724552, zoom: 10)
+        let camera = GMSCameraPosition.camera(withLatitude: 42.8706253, longitude: 74.5724552, zoom: 13)
         map = GMSMapView.map(withFrame: self.mapView.frame, camera: camera)
         map.delegate = self
         map.settings.myLocationButton = true
@@ -187,7 +187,7 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         infoLbl.textAlignment = .center
         infoLbl.backgroundColor = .white
         infoLbl.numberOfLines = 0
-        infoLbl.text = "зажмите, чтобы поставить маркер"
+        infoLbl.text = "Нажмите, чтобы поставить маркер"
         view.addSubview(infoLbl)
     }
 }

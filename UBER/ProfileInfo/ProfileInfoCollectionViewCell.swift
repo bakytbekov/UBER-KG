@@ -19,4 +19,7 @@ class ProfileInfoCollectionViewCell: UICollectionViewCell {
             cardView.layer.shadowOpacity = 0.8
         }
     }
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var dateLbl: UILabel!
+    @IBOutlet weak var statusLbl: UILabel!
 }

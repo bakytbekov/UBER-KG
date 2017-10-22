@@ -12,10 +12,12 @@ import GooglePlaces
 
 class GeneralMapViewController: UIViewController, GMSMapViewDelegate {
 
+    @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet var infoView: UIView!
     @IBOutlet weak var generalMapView: UIView!
     var map: GMSMapView!
     var helpBtn = UIButton()
+    var marker = GMSMarker()
     var markers = [[42.905465, 74.563014] ,
                    [42.866411, 74.620435] ,
                    [42.856219, 74.597862] ,
@@ -56,7 +58,7 @@ class GeneralMapViewController: UIViewController, GMSMapViewDelegate {
     
     func setupMarkers() {
         for i in markers {
-            let marker = GMSMarker(position: CLLocationCoordinate2D(latitude: i[0], longitude: i[1]))
+            marker = GMSMarker(position: CLLocationCoordinate2D(latitude: i[0], longitude: i[1]))
             marker.icon = UIImage(named: "marker")
             marker.map = map
         }
